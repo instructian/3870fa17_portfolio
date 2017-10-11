@@ -6,11 +6,56 @@ nav {border:1px solid red;}
 #portfoliopage .mainnavigation li:nth-child(2){background-color: yellow;}
 #aboutpage .mainnavigation li:nth-child(3){background-color: yellow;}
 
-.cell {outline:1px solid blue;}
+/*.cell {outline:1px solid blue;}*/
 
 /* main page */
 
 
+@media screen and (max-width:799px){
+  .newspaper {
+      -webkit-column-count: 1; /* Chrome, Safari, Opera */
+      -moz-column-count: 1; /* Firefox */
+      column-count: 1;
+
+      -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+      -moz-column-gap: 40px; /* Firefox */
+      column-gap: 40px;
+
+      -webkit-column-rule: 4px outset #ff00ff; /* Chrome, Safari, Opera */
+      -moz-column-rule: 4px outset #ff00ff; /* Firefox */
+      column-rule: 4px outset #ff00ff;
+  }
+
+}
+@media screen and (min-width:800px){
+
+      span {display:block;  margin-left:-20px;}
+      dt {display:block;  font: 1.2em/2em bold verdana, sans-serif;}
+
+      .newspaper {
+          -webkit-column-count: 3; /* Chrome, Safari, Opera */
+          -moz-column-count: 3; /* Firefox */
+          column-count: 3;
+
+          -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+          -moz-column-gap: 40px; /* Firefox */
+          column-gap: 40px;
+
+          -webkit-column-rule: 4px outset #ff00ff; /* Chrome, Safari, Opera */
+          -moz-column-rule: 4px outset #ff00ff; /* Firefox */
+          column-rule: 4px outset #ff00ff;
+      }
+}
 
 
 /* portfolio page */
+
+
+
+/* feedback page */
+
+.tealbg {background-color: teal ;}
+
+body {background-image: url("https://placeimg.com/1000/1000/animals");
+background-repeat: no-repeat;
+background-size: cover;}
